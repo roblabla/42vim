@@ -186,6 +186,6 @@ function! s::update ()
 	endif
 endfunction
 
-command Stdheader call s:insert ()
+command! Stdheader call s:insert ()
 nmap <F1> :Stdheader<CR>
 autocmd BufWritePre * call s:update ()
